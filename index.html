@@ -127,8 +127,7 @@
               Bridging environmental
               science, AI, and human
               factors engineering to
-              create sustainable, user-
-              centered solutions.
+              create sustainable, user-centered solutions.
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
               <a href="#research" class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-900 font-semibold px-5 py-3 rounded-xl hover:bg-emerald-100 transition">
@@ -137,7 +136,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12"/>
                 </svg>
               </a>
-              <a href="#contact" class="inline-flex items-center gap-2 bg-emerald-900/40 text-emerald-50 px-5 py-3 rounded-xl hover:bg-emerald-900/60 transition">
+              <a href="#footer" class="inline-flex items-center gap-2 bg-emerald-900/40 text-emerald-50 px-5 py-3 rounded-xl hover:bg-emerald-900/60 transition">
                 Contact Us
               </a>
             </div>
@@ -440,9 +439,16 @@
           </div>
         <div class="mt-8 pt-6 border-t border-emerald-800/50 text-sm text-emerald-300/80 flex items-center justify-between">
           <p>© <span id="year"></span> HUMA Lab. Created by Farzaneh Ramezani Boye. All rights reserved.</p>
-          <button href="#header" id="toTop" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-900/40 hover:bg-emerald-900/60">
-            ↑ Back to top
-          </button>
+         <button href="#header" id="toTop" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-900/40 hover:bg-emerald-900/60">
+             ↑ Back to top
+         </button>
+
+         <script>
+          const toTopBtn = document.getElementById('toTop');
+          toTopBtn.addEventListener('click', () => {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+               });
+         </script>
         </div>
       </div>
     </div>
